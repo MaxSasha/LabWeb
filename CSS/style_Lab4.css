@@ -1,0 +1,219 @@
+.main{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.main div{
+    padding-bottom: 0;
+    padding-top: 0;
+}
+body{
+    background-color: #F0EFEF;
+    margin: 0;
+    padding: 0;
+}
+.mainContent{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border:none;
+    padding-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	text-align: justify;
+	color: black;
+	border-radius: 0px 0px 10px 10px;
+}
+.mainInfo{
+    background-color: #F0EFEF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+	text-align: justify;
+	color: black;
+    margin: 0;
+    padding-right: 10px;
+    flex: 3;
+    order: 1;
+}
+
+h1{
+    font-size: 17pt;
+    text-shadow: 1px 1px 1px gray;
+}
+.logo{ 
+    text-align: center;
+    width: 70%;
+    height: 100%;
+}
+.titleContent{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+.titleContent h1{
+    text-align: center;
+}
+
+
+table{
+    width: auto; 
+    max-height: 60em;
+    border-collapse: collapse;
+    color: black;
+    text-align: left; 
+    line-height: 1.5em;
+}
+caption{
+    font-weight: bold;
+    color: black;
+    background-color: #cfe3ff;
+    text-align: center;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+.tableBox{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    flex: 1;
+    float: right;
+    background-color: #F0EFEF;
+    border: 1px solid #9b9999;
+    order: 2;
+}
+.tableBox,th,td{
+    vertical-align: top;
+    font-size: 10pt;
+    
+}
+.tableBox,tr{
+    padding-right: 10px;
+    border-bottom: 1px solid #9b9999;
+    
+}
+.tableBox table tr:last-child{
+    border: 0 solid black;
+}
+.tableBox,a{
+    text-decoration: none;
+}
+
+
+.services_style,li{
+    padding-left: 10px;
+    list-style-type: disc;
+}
+.services_style,ul{
+    padding-left: 2%;
+}
+.img_shadow{
+    width: 600px;
+    height: 400px;
+    filter: drop-shadow(0 0 3px rgba(100,0,0,0.5));
+}
+.noneStyle{
+    border-bottom: 0;
+    text-align:center; font-size:125%; font-weight: bold;
+}
+.YearInfo,li{
+    margin: 10 0 0 0;
+    list-style-type: decimal;
+    border-bottom: 1px solid #9b9999;
+}
+.YearInfo,a{
+    text-decoration: none;
+    color: black;
+}
+.historyTable,th{
+    margin-left: 0;
+}
+.toc ul{
+    
+    margin: 0;
+    width: 15em; 
+    
+    max-height: 40em;
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: black;
+    text-align: left; 
+    line-height: 1.5em;
+}
+.toc h2{
+    text-align: center;
+    padding-right: 40px;
+    font-size: 15pt;
+}
+.toc li:last-child
+{
+    border: 0;
+}
+
+header h1{
+    font-size: 17pt;
+    text-shadow: 2px 2px 5px #094b79;
+}
+
+
+footer h1{
+    font-size: 17pt;
+    text-shadow: 2px 2px 5px #094b79;
+}
+footer
+{
+    float: right;
+}
+
+
+
+.navBar{
+    text-align: center;
+    background-color: #4e4d4d;
+    padding-bottom: 0;
+    height: 40px;
+    min-height: 35px;
+    
+}
+.navBar button{
+    height: 100%;
+    margin-right: 5px;
+    background-color: transparent;
+    color: black;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    transition: 0.2s;
+}
+.navBar a{
+    margin-right: 10px;
+    background-color: transparent;
+    color: black;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    transition: 0.2s;
+    color: #dadde5;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+}
+.navBar2:hover{
+    background-color: #414142;
+  
+}
+.navBar2 {
+    border: 5px solid green;
+}
+.navBar .navBar1{  
+    max-height: 50px;
+    max-width: 200px;
+	background-color: #414142;
+}
