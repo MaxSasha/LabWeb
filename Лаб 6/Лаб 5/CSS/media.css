@@ -1,0 +1,523 @@
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+.navBar{
+	height: auto;
+	padding-left: 2%;
+	width: 100%;
+}
+
+.navBar a{
+	width: 10%;
+	padding-right: 20px;
+	font-size: 5pt;
+	margin-right: 2px;
+}
+.table{
+	
+	width: auto; 
+	line-height: 0.8em;
+}
+caption{
+    font-size: 6pt;
+}
+.tableBox{
+	float: left;
+	align-items: center;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 90%;
+}
+.tableBox,th,td{
+	
+	font-size: 6pt;
+}
+.mainInfo{
+	float: none;
+	font-size: 6pt;
+	line-height: 1.2em;
+	text-align: justify;
+}
+
+header h1{
+	font-size: 6pt;
+	text-shadow: 2px 2px 5px #094b79;
+}
+footer h1{
+	font-size: 6pt;
+	text-shadow: 2px 2px 5px #094b79;
+}
+.logo{ 
+    text-align: center;
+    width: 40%;
+    height: 100%;
+}
+.toc li{
+	margin-left: 5%;
+	
+}
+.toc h2{
+    text-align: center;
+    padding-right: 40px;
+    font-size: 8pt;
+}
+h1{
+    font-size: 8pt;
+    text-shadow: 1px 1px 1px gray;
+}
+.img_shadow{
+	width: 250px;
+    height: 160px;
+    filter: drop-shadow(0 0 3px rgba(100,0,0,0.5));
+}
+}
+
+/*_--------------------------------------------------575 */
+@media (max-width: 575px){
+	.navBar{
+		height: auto;
+		padding-left: 2%;
+		width: 100%;
+	}
+	.navBar button{
+		width: 20%;
+		padding-right: 30px;
+		max-height: 6%;
+		
+	}
+	.navBar a{
+		width: 10%;
+		padding-right: 20px;
+		font-size: 8pt;
+		margin-right: 2px;
+	}
+	table{
+		width: auto; 
+		line-height: 0.9em;
+	}
+	
+	.tableBox{
+		float: initial;
+		text-align: center;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 90%;
+	}
+	.img_shadow {
+		width: 250px;
+		height: 160px;
+		filter: drop-shadow(0 0 3px rgba(100,0,0,0.5));
+	}
+	.tableBox,th,td{
+		font-size: 6pt;
+	}
+	.mainInfo{
+		font-size: 7pt;
+		line-height: 1.2em;
+		text-align: justify;
+	}
+	header h1{
+		font-size: 10pt;
+		text-shadow: 2px 2px 5px #094b79;
+	}
+	footer h1{
+		font-size: 10pt;
+		text-shadow: 2px 2px 5px #094b79;
+	}
+	.toc ul li{
+		line-height: 1.0em;
+		font-size: 9pt;
+	}
+	.toc li{
+		margin-left: 10%;
+	}
+	.logo{ 
+		text-align: center;
+		width: 35%;
+		height: 100%;
+	}
+	caption{
+		font-size: 8pt;
+	}
+	.toc h2{
+		text-align: center;
+		padding-right: 40px;
+		font-size: 8pt;
+	}
+	h1{
+		font-size: 8pt;
+		text-shadow: 1px 1px 1px gray;
+	}
+	
+	
+}
+/*_-------------------------------------------------------576 - 767 */
+@media (min-width: 576px) and (max-width: 767px){
+	
+	.navBar{
+		height: 10%;
+		min-height: 40px;
+		max-height: 40px;
+		
+		padding-left: 2%;
+		width: 100%;
+		align-items: center;
+		
+	}
+	.navBar button{
+		height: 100%;
+		text-align: center;
+		width: 20%;
+		padding-right: 30px;
+		max-height: 100%;
+		
+	}
+	.navBar a{
+		margin-top: 1.5px;
+		font-size: 10pt;
+	}
+	table{
+		width: auto; 
+		line-height: 1.0em;
+	}
+	
+	.tableBox{
+		align-items: center;
+		margin-left: 5px;
+		margin-bottom: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 30%;
+	}
+	.tableBox,th,td{
+		font-size: 6pt;
+	}
+	.mainInfo{
+		font-size: 8pt;
+		line-height: 1.2em;
+		text-align: justify;
+	}
+	header h1{
+		font-size: 10pt;
+		text-shadow: 2px 2px 5px #094b79;
+	}
+	footer h1{
+		font-size: 10pt;
+		text-shadow: 2px 2px 5px #094b79;
+	}
+	.toc ul li{
+		line-height: 1.0em;
+		font-size: 7pt;
+	}
+	.toc li{
+		margin-left: 5%;
+		padding-left: 10px;
+	}
+	.toc h2{
+		text-align: center;
+		padding-right: 40px;
+		font-size: 8pt;
+	}
+	h1{
+		font-size: 11pt;
+		text-shadow: 1px 1px 1px gray;
+	}
+	.navBar1 .navBar2{
+		display: none;
+	}
+	.img_shadow{
+		width: 400px;
+		height: 210px;
+	}
+	
+	h2{
+		font-size: 10pt;
+	}
+	caption{
+		font-size: 10pt;
+	}
+	
+}
+/*_-------------------------------------------------------765 - 991 */
+@media (min-width: 765px) and (max-width: 991px){
+
+	.navBar{
+		height: 10%;
+		min-height: 45px;
+		max-height: 45px;
+		padding-left: 2%;
+		width: 100%;
+		
+	}
+	.navBar button{
+		width: 20%;
+		padding-right: 30px;
+		height: 100%;
+		
+	}
+	.navBar a{
+		margin-top: 3px;
+		font-size: 11pt;
+	}
+	table{
+		width: auto; 
+		line-height: 0.9em;
+	}
+	
+	.tableBox{
+		align-items: center;
+		margin-left: 5px;
+		margin-bottom: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 25%;
+	}
+	.tableBox,th,td{
+		font-size: 7pt;
+	}
+	.mainInfo{
+		font-size: 8pt;
+		line-height: 1.2em;
+		text-align: justify;
+	}
+	header h1{
+		font-size: 10pt;
+		text-shadow: 2px 2px 5px #094b79;
+	}
+	footer h1{
+		font-size: 10pt;
+		text-shadow: 2px 2px 5px #094b79;
+	}
+	.toc ul li{
+		line-height: 1.0em;
+		font-size: 7pt;
+	}
+	.toc h2{
+		text-align: center;
+		padding-right: 40px;
+		font-size: 8pt;
+	}
+	h1{
+		font-size: 12pt;
+		text-shadow: 1px 1px 1px gray;
+	}
+	.img_shadow{
+		width: 400px;
+		height: 210px;
+	}
+	h2{
+		font-size: 10pt;
+	}
+
+}
+/*_-------------------------------------------------------992 - 1199 */
+@media (min-width: 992px) and (max-width: 1199px){
+	.navBar{
+		height: 10%;
+		min-height: 45px;
+		max-height: 45px;
+		padding-left: 2%;
+		width: 100%;
+		
+	}
+	.navBar button{
+		width: 20%;
+		padding-right: 30px;
+		height: 100%;
+		
+	}
+	.navBar a{
+		margin-top: 3px;
+		font-size: 11pt;
+	}
+	table{
+		width: auto; 
+		line-height: 0.9em;
+	}
+	
+	.tableBox{
+		align-items: center;
+		margin-left: 5px;
+		margin-bottom: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 25%;
+	}
+	.tableBox,th,td{
+		font-size: 8pt;
+	}
+	.mainInfo{
+		font-size: 9pt;
+		line-height: 1.2em;
+		text-align: justify;
+	}
+	header h1{
+		font-size: 10pt;
+		text-shadow: 2px 2px 5px #094b79;
+	}
+	footer h1{
+		font-size: 10pt;
+		text-shadow: 2px 2px 5px #094b79;
+	}
+	.toc ul li{
+		line-height: 1.0em;
+		font-size: 7pt;
+	}
+	.toc h2{
+		text-align: center;
+		padding-right: 40px;
+		font-size: 8pt;
+	}
+	h1{
+		font-size: 8pt;
+		text-shadow: 1px 1px 1px gray;
+	}
+}
+
+/*_-------------------------------------------------------1200 - 1600 */
+@media (min-width: 1200px) and (max-width: 1600px){
+	.navBar{
+		height: 10%;
+		min-height: 45px;
+		max-height: 45px;
+		padding-left: 2%;
+		width: 100%;
+		
+	}
+	.navBar button{
+		width: 20%;
+		padding-right: 30px;
+		height: 100%;
+		
+	}
+	.navBar a{
+		margin-top: 3px;
+		font-size: 13pt;
+	}
+	table{
+		width: auto; 
+		line-height: 1.8em;
+	}
+	
+	.tableBox{
+		align-items: center;
+		margin-left: 5px;
+		margin-bottom: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 25%;
+	}
+	.tableBox,th,td{
+		font-size: 10pt;
+	}
+	.mainInfo{
+		font-size: 13pt;
+		line-height: 1.4em;
+		text-align: justify;
+	}
+	header h1{
+		font-size: 15pt;
+		text-shadow: 2px 2px 5px #094b79;
+	}
+	footer h1{
+		font-size: 15pt;
+		text-shadow: 2px 2px 5px #094b79;
+	}
+	.toc ul li{
+		line-height: 1.0em;
+		font-size: 10pt;
+	}
+	.logo{ 
+		text-align: center;
+		width: 40%;
+		height: 100%;
+	}
+	caption{
+		font-size: 10pt;
+	}
+	.toc h2{
+		text-align: center;
+		padding-right: 40px;
+		font-size: 14pt;
+	}
+	h1{
+		font-size: 16pt;
+		text-shadow: 1px 1px 1px gray;
+	}
+}
+/*_-------------------------------------------------------1601 - 2000 */
+@media (min-width: 1601px) and (max-width: 2000px){
+	.navBar{
+		height: 10%;
+		min-height: 55px;
+		max-height: 55px;
+		padding-left: 2%;
+		width: 100%;
+		
+	}
+	.navBar button{
+		width: 20%;
+		padding-right: 30px;
+		height: 100%;
+		
+	}
+	.navBar a{
+		margin-top: 5px;
+		font-size: 14pt;
+	}
+	table{
+		width: auto; 
+		line-height: 1.8em;
+	}
+	
+	.tableBox{
+		align-items: center;
+		margin-left: 5px;
+		margin-bottom: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 25%;
+	}
+	.tableBox,th,td{
+		font-size: 12pt;
+	}
+	.mainInfo{
+		font-size: 12pt;
+		line-height: 1.5em;
+		text-align: justify;
+	}
+	header h1{
+		font-size: 15pt;
+		text-shadow: 2px 2px 5px #094b79;
+	}
+	footer h1{
+		margin-right: 10px;
+		font-size: 15pt;
+		text-shadow: 2px 2px 5px #094b79;
+	}
+	.toc ul li{
+		line-height: 1.0em;
+		font-size: 13pt;
+	}
+	.logo{ 
+		text-align: center;
+		width: 40%;
+		height: 100%;
+	}
+	caption{
+		font-size: 13pt;
+	}
+	.toc h2{
+		text-align: center;
+		padding-right: 40px;
+		font-size: 14pt;
+	}
+	h1{
+		font-size: 16pt;
+		text-shadow: 1px 1px 1px gray;
+	}
+}

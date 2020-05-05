@@ -1,0 +1,76 @@
+h1{
+	text-align: center;
+	text-shadow: 1px 1px 5px red;
+	font-size: 17pt;
+	font-weight: bold;
+}
+h3{
+	font-size: 15pt;
+	font-weight: bold;
+	text-shadow: 1px 1px 0.5px gray;
+}
+h2{
+	font-size: 17pt;
+	font-weight: bold;
+	text-shadow: 1px 1px 0.5px gray;
+}
+title{
+	font-size: 15pt;
+}
+li{
+	list-style-type: disc;
+}
+body{
+	margin-top: 0;
+	padding-left: 30;
+	padding-right: 30;
+	background-color: #919191;
+	background-image: linear-gradient(to right, white , yellow);
+}
+.main{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	background-color: #F0EFEF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	text-align: justify;
+	color: black;
+	border-radius: 10px 10px 10px 10px;
+}
+.imageBox{
+	border-radius: 10px 10px 10px 10px;
+	vertical-align: center;
+	width: 400px;
+	height: 270px;
+}
+
+.imgLogo{
+	width: 35px;
+	height: 20px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: transparent;
+	border-color: transparent; 
+}
+.inputFeedback{
+	display: block;
+}
+.instaImage{
+
+	background-image: url(instagramLogo.png);
+}
+.asinput{
+	border: 2px solid #1f7438;
+}
+.valid{
+	border: 2px solid lightgreen;
+}
+.invalid{
+	border: 2px solid red;
+}
+.sform{
+	border: 2px solid red;
+}
+span{
+	color: red;
+}

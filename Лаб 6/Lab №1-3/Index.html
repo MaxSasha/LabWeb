@@ -1,0 +1,180 @@
+<!DOCTIPE html>
+<html>
+	<head>
+	<meta charset="UTF-8" >
+	<title>Резюме</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	</head>
+
+	<body>
+		<div class="main">
+			<div >
+			<h1>Резюме</h1>
+			<hr/>
+			</div>
+			<div class="imageBox">
+				<img class="imageBox" src="photo.jpg">
+			</div>
+			<div >
+				<h2>Персональні дані</h2>
+					<b><u>Максимів Олександр Володимирович</u><br/></b>
+					Дата народження: <b><i>08.10.2000</i></b><br/>
+					Вік: <i><b>19</b> років(08.10.2000)</i><br/>
+					Проживання: <b><i>м.Хмельницький</i></b>
+					<p>
+						<p>Освіта:</p>
+					<ul> 
+						<li>Вища: Навчаюсь в <b>ХНУ</b></li>
+						<li>Середня: <b>Гусятинська ЗОШ I-III ст.</b></li>
+					</ul>
+					</p>
+
+			<hr>
+			<h3>Загальний рівень володіння комп'ютером: високий</h3>
+			<hr>
+			<h3>Володіння офісними програмамми</h3>
+			<ol>
+				<li> Microsoft office (Medium)</li>
+				<li>Visual Studio (Medium)</li>
+				<li>Intellij IDEA (Medium)</li>
+			</ol>
+			<hr>
+			<h3>Мови програмування</h3>
+			<ol>
+				<li>C# (Medium)</li>
+				<li>C (Low)</li>
+				<li>java (Medium)</li>
+			</ol>
+			<hr>
+			<h3>Контактні дані</h3>
+			<div>
+				<p>
+    				<a href="https://www.instagram.com/studradakhnu/"><img class="imgLogo" src="instagramLogo.png" alt="Instagram"></a>
+    			</p>
+    			<p>
+    				<a href="https://ru-ru.facebook.com/studradakhnu/"><img class="imgLogo" src="facebookLogo.png" alt="Facebook"></a>
+    			</p>
+				<p>Мобільний телефон: <b><i>06666666666</i></b> </p>
+				<p>Електрона пошта: <b><i>123@ukr.net</i></b> </p> 
+			</div>
+			<div class="inputFeedback">
+				<h3>Зворотній зв'язок</h3>
+				<form name="mainForm" id="mainForm">
+					<label for="name">Ім'я</label> <span id="name"></span>
+					<p><input type="text" name="name" placeholder="введіть ім'я" data-rule="required name"></p>
+					
+
+					<label for="email">Електрона пошта</label> <span id="email"></span>
+					<p><input type="text" placeholder="введіть пошту"  name="email" data-rule="required email"></p>
+					
+
+					<label for="phone">Телефон</label> <span id="phone"></span>
+					<p><input type="text" name="phone" placeholder="введіть телефон"  data-rule="required phone"></p>
+					
+
+					<label for="message">Повідомлення</label> <span id="message"></span>
+					<p><textarea type="text" name="message" onblur="leng()" placeholder="напишіть повідомлення" data-rule="required"></textarea></p>
+					<span id="messageLength"></span>
+
+					<p><button type="submit">Готово</button></p>
+
+				</form>
+			</div>		
+			<HR/>
+			<p><a href="example1.html">Я вмію створювати таблиці</a></p>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			
+			var forms = document.getElementsByTagName('form');
+			for(var i = 0; i<forms.length; i++)
+			{
+				forms[i].addEventListener('submit', validator);
+			}
+			var rules = {
+				required: function(el)
+				{
+					if(el.value!='')
+						return true;
+					else 
+						return false;
+				},
+				email: function(el){
+					 var reg =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+					 return reg.test(el.value);
+				},
+				max: function(el){
+					if(el.value.length<45)
+						return true;
+					else 
+						return false;
+				},
+				phone: function(el){
+					 var reg =  /^\d[\d\(\)\ -]{4,14}\d$/;
+					 return reg.test(el.value);
+				},
+				name: function(el){
+					var reg = /^[A-Za-zА-Яа-я]+$/;
+					 return reg.test(el.value);
+				}
+				
+				
+			}
+			function showErrors(err){
+				console.log(err);
+			}
+			function validator(e){
+				var spans = ["name","email","phone","message"]
+				e.preventDefault();
+				var errors = [];
+				var inputs = this.elements;
+				for (var i = 0; i<inputs.length;i++)
+				{
+					if(inputs[i].tagName != 'BUTTON')
+					{
+					var rulesList = inputs[i].dataset.rule;
+					rulesList = rulesList.split(' ');
+					for(var j = 0; j< rulesList.length; j++)
+					{
+						if(rulesList[j] in rules)
+						{
+							if(!rules[rulesList[j]](inputs[i]))
+							{
+								errors.push({
+									name: inputs[i].name,
+									error: rulesList[j]
+								});
+							}
+						}
+					}
+					}
+				}
+				for(var i = 0; i<spans.length; i++)
+				{
+					document.getElementById(''+spans[i]).innerHTML = '';
+				}
+				if(errors.length > 0){
+					for(var i = 0; i<errors.length; i++)
+					{
+						for (var j = 0; j<spans.length; j++) {
+							if(errors[i].name == spans[j]){
+								document.getElementById(''+spans[j]).innerHTML = 'Некоректне введення';
+							}
+						}
+					}
+					showErrors(errors);
+				}
+				else{
+					alert("Валідація прошла успішно");
+				}
+			}
+			function leng(){
+				var x = document.forms["mainForm"]["message"].value;
+				lengt = x.length;
+				document.getElementById('messageLength').innerHTML = 'Довжина повідомлення - ' + lengt;
+			}
+		</script>
+	</body>	
+</html>
