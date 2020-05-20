@@ -1,0 +1,84 @@
+<!DOCTIPE html>
+<html>
+	<head>
+	<meta charset="UTF-8" >
+	
+	
+	<title>Lab_7</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/style_Lab4.css">
+	<script type="text/javascript" src="scripts.js"></script>
+	<style type="text/css">
+		.line{ 
+			border-right: 2px solid #000000;
+		 	padding-left: 5px;
+			padding-right: 21px;
+		}
+		.linefirst{
+			border-left: 2px solid #000000;
+			border-right: 2px solid #000000;
+			padding-left: 5px;
+			margin-left: 10px;
+			padding-right: 5px;
+		}
+		.linelast{
+			border-right: 2px solid #000000;
+		 	padding-left: 5px;
+			padding-right: 5px;
+		}
+	   </style> 
+	</head>
+
+	<body onload="printText()">
+		<div class="main">
+			<div class="content">
+				<p>Звичайний текст</p>
+				<p>Текст який був надрукований за допомогою javascript:</p>
+				<span id="text"></span><br>
+				<span id="text2"></span><br>
+				<span id="text3"></span><br>
+
+				<input type="button" onclick="showDate()" value="Відобразити дату народження"><br>
+				<p><a href="Task_2.html">перейти до завдання №2</a></p>
+				
+			</div>
+			<br>
+			<footer><h3><span id="quote"></span></h3><br/> </footer>
+			<br>
+			<input type="button" onclick="generate()" value="сума добутку N чисел"><br>
+			<input type="button" onclick="generate2()" value="Непарні"><br>
+			<input type="button" onclick="generate3()" value="факторіал"><br>
+			<input type="button" onclick="generate4()" value="Таблиця множення"><br><br>
+			<div style="padding: 0px; margin: 0px;">
+				<div id="top" style="display: none; width: 394px;margin-left: 22px;"><hr></div>
+				<div style="display: flex; margin-left: 10px;">
+					<span class="linefirst" style="margin-right: 10px;" id="one"></span>
+					<span class="linelast" style="margin-right: 10px;" id="two"></span>
+					<span class="linelast" style="margin-right: 10px;" id="three"></span>
+					<span class="linelast" style="margin-right: 10px;" id="four"></span>
+					<span class="line" style="margin-right: 10px;" id="five"></span>
+				</div>
+				<div id="center" style="display: none; width: 394px;margin-left: 22px;"><hr></div>
+				<div style="display: flex; margin-left: 10px;">
+					<span class="linefirst" style="margin-right: 10px;" id="six"></span>
+					<span class="linelast" style="margin-right: 10px;" id="seven"></span>
+					<span class="linelast" style="margin-right: 10px;" id="eight"></span>
+					<span class="linelast" style="margin-right: 10px;" id="nine"></span>
+					<span class="linelast" style="margin-right: 10px;" id="ten"></span>
+				</div>
+				<div id="bottom" style="display: none; width: 394px;margin-left: 22px;"><hr></div>
+			</div>
+			<h1 style="text-align: center;">CLOCK</h1>
+			<div style="text-align: center;" id="clock">
+				<span class="min">mm</span>:<span class="sec">ss</span>:<span class="hour">hh</span>
+			  </div>
+			<div style="display: block; text-align: center;">
+				<input style="width: 100px;" type="button" onclick="clockStart()" value="Старт"><br>
+				<input style="width: 100px;" type="button" onclick="clockStop()" value="Стоп"><br>
+			</div>
+			
+			
+		
+		</div>
+		
+	</body>
+</html>
